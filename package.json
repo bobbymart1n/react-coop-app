@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "lint": "eslint src/*.jsx src/**/**; exit 0",
-    "lint-fix": "eslint src/*.jsx src/**/** --fix; exit 0"
+    "lint-fix": "eslint src/*.jsx src/**/*.jsx --fix; exit 0"
   },
   "author": "",
   "license": "ISC",
@@ -27,7 +27,9 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-react": "^7.10.0",
     "html-webpack-plugin": "^2.29.0",
+    "node-sass": "^4.9.0",
     "react-hot-loader": "^3.0.0-beta.7",
+    "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "webpack": "^3.4.0",
     "webpack-dev-server": "^2.5.0"
