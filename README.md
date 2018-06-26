@@ -1,10 +1,10 @@
-# React Template App
-**A webpack setup / first React application for Epicodus 06.24.18**
+# React Farm Coop App
+**A React application for Epicodus 06.24.18**
 
 ## By Bobby Martin
 
 ## Description
-This is a basic React app that uses props, and propTypes eslint, styled-jsx, and hot-swap
+This is a basic React app that uses props, and propTypes eslint, CSS Modules, and hot-swap to display JSON data
 
 ## Setup Requirements
 
