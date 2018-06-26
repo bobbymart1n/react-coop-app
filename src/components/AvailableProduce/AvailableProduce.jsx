@@ -1,5 +1,5 @@
 import React from 'react';
-import ProduceItems from './../ProduceItems/ProduceItems';
+import styles from './AvailableProduce.css';
 
 const availableProduce = [
   {
@@ -270,18 +270,6 @@ const availableProduce = [
   }
 ];
 
-// function checkMonth() {
-//   const currentMonth = new Date().getMonth();
-//   const monthFromArr = availableProduce.map(monthDate => monthDate.month);
-//   let currentMonthFromArr;
-//   monthFromArr.forEach((month, index) => {
-//     if(currentMonth === index) {
-//       currentMonthFromArr = month;
-//     }
-//   })
-//   return currentMonthFromArr;
-// }
-
 const curMonth = () => new Date().getMonth();
 
 const fullMonth = () => {
@@ -292,22 +280,17 @@ const getMonthArr = (month) => {
   return availableProduce.map(current => current.selection)[month];
 }
 
-// function AvailableProduce() {
-//   {availableProduce.map((current, index) =>
-//     current.month === checkMonth() ? <ProduceItems month={current.month}/> : <p>Theres been an error</p>
-//   )}
-// }
-
-
 function AvailableProduce() {
   const month = fullMonth();
   const monthArr = getMonthArr(curMonth());
   return (
-    <div>
+    <div className={styles.availableProduceContainer}>
       <h3>Available Produce for {month}</h3>
-      {monthArr.map((item, index) =>
-        <p key={index}>{item}</p>
-      )};
+      <div className={styles.produceItems}>
+        {monthArr.map((item, index) =>
+          <p key={index}>{item}</p>
+        )}
+      </div>
     </div>
   );
 }

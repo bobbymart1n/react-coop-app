@@ -1,8 +1,12 @@
 .scheduleItem {
+  height: 200px;
   width: 300px;
+  font-family: sans-serif;
+  font-size: 1.4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: cornsilk;
+  background: palevioletred;
+  border-radius: 10px;
 }
