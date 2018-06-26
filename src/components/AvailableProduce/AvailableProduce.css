@@ -8,6 +8,8 @@
 }
 
 .availableProduceContainer p {
+  width: 100px;
+  text-align: center;
   margin: 10px 0;
   border: 1px solid palevioletred;
   padding: 10px;
